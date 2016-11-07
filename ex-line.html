@@ -1,0 +1,35 @@
+<html>
+  <head>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawLine);
+      function drawLine() {
+        
+        var data = google.visualization.arrayToDataTable([
+            ['Ano','Púb', 'Priv','Total'],
+            ['2000',34,264,297],
+            ['2007',50,496,546],
+            ['2008',51,499,550],
+            ['2009',51,498,549]
+        ]);
+
+        var options = {
+            chart: {
+              title: 'Ingressantes - Cursos Presenciais - SP',
+              subtitle: 'Fonte: SEMESP',              
+            },                        
+            width: 500,
+            height: 300            
+        };
+
+        var chart = new google.charts.Line(document.getElementById('line_div'));        
+        chart.draw(data, options);
+
+      }
+    </script>
+  </head>
+  <body>
+    <div id="line_div"  style="width: 500px; height: 300px;"></div>
+  </body>
+</html>

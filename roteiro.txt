@@ -1,0 +1,36 @@
+****************************************************************************************
+Projeto elaborado e desenvolvido por Rogério Cardoso
+Contato: prof.rogeriocardoso@gmail.com - Github: https://github.com/rogeriocardoso
+****************************************************************************************
+
+########################################################################################
+Lista dos assuntos abordados:
+
+- 1: Dados, Informação e Conhecimento
+- 2: Introdução a Dashboards
+- 3: Introdução a Visualização de Informação
+- 4: Principais Ferramentas para Visualização (gráficos)
+- 5: Implementação de Dashboards em JavaScript
+########################################################################################
+
+Sugestões de Fontes de Estudo: 
+  * http://www.codecademy.com/pt-BR/tracks/javascript   - Academia On-line de JavaScript
+  * http://www.w3schools.com/js/ 
+  * https://www.javascript.com
+  * https://www.coursera.org  (muitos cursos gratuitos sobre Computação e outros temas)
+
+Sugestões de Livros: 
+  * JavaScript: The Definitive Guide: Activate Your Web Pages - David Flanagan
+  * JavaScript: The Good Parts - Douglas Crockford
+  * Thinking in JavaScript - Aravind Shenoy
+  * Project Management Metriks, KPS and Dashboards - Harold Kerzner, 2nd Edition
+  
+Artigos do tema e indicações de outras bibliotecas de geração de gráficos
+
+  * https://www.sitepoint.com/15-best-javascript-charting-libraries/
+  * http://blog.udacity.com/2016/03/12-best-charting-libraries-for-web-developers.html
+  * http://thenextweb.com/dd/2015/06/12/20-best-javascript-chart-libraries/
+  * http://www.highcharts.com/
+  * http://canvasjs.com/
+  * http://www.chartjs.org/
+  * http://www.jqwidgets.com/jquery-widgets-documentation/

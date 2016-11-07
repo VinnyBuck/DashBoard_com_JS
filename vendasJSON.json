@@ -1,0 +1,20 @@
+{
+  "cols": [
+        {"id":"","label":"Departamento","pattern":"","type":"string"},
+        {"id":"","label":"Vendas","pattern":"","type":"number"}
+      ],
+  "rows": [
+        {"c":[{"v":"Automotivo","f":null},{"v": 125,"f":null}]},
+        {"c":[{"v":"Beleza e Saúde","f":null},{"v":88,"f":null}]},
+        {"c":[{"v":"Câmeras","f":null},{"v":208,"f":null}]},
+        {"c":[{"v":"Eletrodomésticos","f":null},{"v":283,"f":null}]},
+        {"c":[{"v":"Eletroportáteis","f":null},{"v":79,"f":null}]},
+        {"c":[{"v":"Esporte e Lazer","f":null},{"v":96,"f":null}]},
+        {"c":[{"v":"Games","f":null},{"v":90,"f":null}]},
+        {"c":[{"v":"Informática","f":null},{"v":350,"f":null}]},
+        {"c":[{"v":"Móveis e Decoração","f":null},{"v":170,"f":null}]}
+      ]
+}
+
+
+    

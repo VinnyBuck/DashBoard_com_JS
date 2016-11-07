@@ -1,0 +1,35 @@
+<html>
+  <head>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawPie);
+      function drawPie() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Departamento', 'Vendas'],
+          ['Beleza e Saúde', 88],
+          ['Eletrodomésticos', 283],
+          ['Games', 90],
+          ['Informática', 350],
+          ['Smartphones', 400],
+          ['TV, Áudio e Vídeo', 120]
+        ]);
+
+        var options = {
+          title:'Vendas por Departamento - eCommerce',
+          legend: 'right',
+          width : 450,
+          height : 350,
+          pieHole: 0.3,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
+        chart.draw(data, options);  
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart_div"></div>
+  </body>
+</html>

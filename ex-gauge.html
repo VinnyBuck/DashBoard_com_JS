@@ -1,0 +1,54 @@
+<html>
+  <head>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+      google.charts.load('current', {'packages':['gauge']});
+      google.charts.setOnLoadCallback(drawGauge);
+      function drawGauge() {
+
+        // Pattern:  [Label , value] for each gauge
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['Banda', 80],
+          ['Acessos', 55]
+        ]);
+
+        var options = {
+          width: 400, height: 200,
+          redFrom: 90, redTo: 100,
+          yellowFrom:75, yellowTo: 90,
+          minorTicks: 5,          
+        };
+
+        var data1 = google.visualization.arrayToDataTable([          
+          ['Label', 'Value'],
+          ['Vendas', 80],
+          ['Cliente', 55],
+          ['Hits', 30]
+        ]);
+
+        var options1 = {          
+          width: 400, height: 200,
+          redFrom: 0, redTo: 40,
+          yellowFrom:40, yellowTo: 85,
+          yellowColor:'yellow',
+          greenFrom: 85, greenTo: 100,
+          greenColor: '#39b640',
+          minorTicks: 5,
+          majorTicks: ['Baixa','Média','Alta']
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('gauge_div'));
+        chart.draw(data, options);
+
+        var chart = new google.visualization.Gauge(document.getElementById('gauge1_div'));
+        chart.draw(data1, options1);
+        
+      }
+    </script>
+  </head>
+  <body>
+    <div id="gauge_div" style="width: 400px; height: 200px;"></div>
+    <div id="gauge1_div" style="width: 400px; height: 200px;"></div>
+  </body>
+</html>

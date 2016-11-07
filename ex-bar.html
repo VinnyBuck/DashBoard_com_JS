@@ -1,0 +1,35 @@
+<html>
+  <head>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart','bar']});
+      google.charts.setOnLoadCallback(drawBar);
+      function drawBar() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Região', '2016', '2015'],
+            ['Gde.SPaulo', 8175000, 8008000],
+            ['Campinas', 3792000, 3694000],
+            ['SJ Campos', 2695000, 2896000],
+            ['Rib.Preto', 2099000, 1953000],
+            ['Bauru', 1526000, 1517000]
+        ]);
+
+        var options = {
+            chart: {
+              title: 'Evolução de  Vendas entre 2015 e 2016',
+              subtitle: 'Regiões do estado de São Paulo',              
+            },                        
+            bars: 'horizontal',
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('bar_div'));        
+        chart.draw(data, options);
+
+      }
+    </script>
+  </head>
+  <body>
+    <div id="bar_div"  style="width: 500px; height: 300px;"></div>
+  </body>
+</html>
